@@ -57,4 +57,25 @@ for num in numbers:
             continue
     elif(num > 500):
     break 
+    
+#Q28. Write a code to get the desired output of the following
+string = "Big Data iNeuron"
+print(string[9:])
+
+#Q29. Write a code to get the desired output of the following
+#string = "Big Data iNeuron"
+#desired_output = "norueNi"
+#k=-7
+#print(string[::-1])
+
+#Q33. How can you print the below string?
+# 'iNeuron's Big Data Course'
+str1 = "'ineuron's Big Data Course'"
+print(str1)
+
+#Q37. Write a code to access the word "iNeuron" from the given list.
+
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(lst[4][2])
+
 
