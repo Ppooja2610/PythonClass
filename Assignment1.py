@@ -24,6 +24,15 @@ else:
 #Q23. Write a code that displays the sum of all the even numbers from the given list.
 #numbers = [12, 75, 150, 180, 145, 525, 50]
 
+sum=0
+numbers = [12, 75, 150, 180, 145, 525, 50]
+for i in range(0,len(numbers),1):
+    if (numbers[i]%2 == 0):
+        sum=sum + numbers[i]
+    else:
+        continue
+print('Sum is:',sum)
+
 # Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
 num1 = int(input("Enter first number :"))
