@@ -94,6 +94,15 @@ print(str1)
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 print(lst[4][2])
 
+#Q77. Write a Python program to calculate the simple interest. 
+#Formula to calculate simple interest is SI = (PRT)/100
+si=1
+def interest(p,r,t):
+    si= ((p*r*t) / 100)
+    return si
+si = interest(100,2,1)
+print('Simple Interest is',si)
+
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
