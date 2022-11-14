@@ -106,4 +106,14 @@ for i in range(0, n):
   
         # ending line after each row  
         print() 
+        
+#Q76. Write a Python program to find the factorial of a given number.
 
+def factorial(n):
+    num = 1
+    while n >= 1:
+        num = num * n
+        n = n - 1
+    return num
+f = factorial(5)
+print(f)
