@@ -62,6 +62,11 @@ for num in numbers:
 string = "Big Data iNeuron"
 print(string[9:])
 
+#Q37. Write a code to access the word "iNeuron" from the given list.
+
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(lst[4][2])
+
 #Q29. Write a code to get the desired output of the following
 #string = "Big Data iNeuron"
 #desired_output = "norueNi"
