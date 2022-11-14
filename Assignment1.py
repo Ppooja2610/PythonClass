@@ -94,6 +94,17 @@ print(str1)
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 print(lst[4][2])
 
+#Q76. Write a Python program to find the factorial of a given number.
+
+def factorial(n):
+    num = 1
+    while n >= 1:
+        num = num * n
+        n = n - 1
+    return num
+f = factorial(5)
+print(f)
+
 #Q77. Write a Python program to calculate the simple interest. 
 #Formula to calculate simple interest is SI = (PRT)/100
 si=1
@@ -112,6 +123,18 @@ a=p*(1+(r/100))**t
 ci=a-p  
 print(ci)
 
+#Q79. Write a Python program to check if a number is prime or not.
+
+num=int(input("Enter a number:"))
+
+if(num%2==0):
+    print('Even number')
+else:
+    print('Odd Number')
+    
+    
+    
+    
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
@@ -124,14 +147,3 @@ for i in range(0, n):
   
         # ending line after each row  
         print() 
-        
-#Q76. Write a Python program to find the factorial of a given number.
-
-def factorial(n):
-    num = 1
-    while n >= 1:
-        num = num * n
-        n = n - 1
-    return num
-f = factorial(5)
-print(f)
