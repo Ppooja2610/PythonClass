@@ -76,6 +76,8 @@ print(string[9:])
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 print(lst[4][2])
 
+
+
 #Q29. Write a code to get the desired output of the following
 #string = "Big Data iNeuron"
 #desired_output = "norueNi"
@@ -92,4 +94,16 @@ print(str1)
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 print(lst[4][2])
 
+#Question 96 pattern
+
+n = int(input("Enter the number of rows"))  
+for i in range(0, n):  
+    # inner loop to handle number of columns  
+    # values is changing according to outer loop  
+        for j in range(0, i + 1):  
+            # printing stars  
+            print("* ", end="")       
+  
+        # ending line after each row  
+        print() 
 
