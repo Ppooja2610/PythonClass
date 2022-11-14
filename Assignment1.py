@@ -103,6 +103,15 @@ def interest(p,r,t):
 si = interest(100,2,1)
 print('Simple Interest is',si)
 
+#Q78. Write a Python program to calculate the compound interest. 
+# Formula of compound interest is A = P(1+ R/100)^t.
+p= 1200  
+t= 2     
+r= 5.4    
+a=p*(1+(r/100))**t  
+ci=a-p  
+print(ci)
+
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
