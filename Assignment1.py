@@ -168,6 +168,15 @@ resStr = myStr[:c] +  myStr[(c+1):]
 print ("Entered string : " + myStr)
 print ("String formed by removing c'th character : " + resStr)
 
+#Q88. Write a Python program to check if a substring is present in a given string.
+str1 = input('Enter the string : ')
+str2 = input('Substring to be searched: ')
+
+if str2 in str1:
+        print('Given substring is present')
+else:
+        print('Given substring is not present')
+
 #Q91. Write a Python program to merge two dictionary.
 def Merge(dict1, dict2):
     res = {**dict1, **dict2}
