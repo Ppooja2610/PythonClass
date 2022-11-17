@@ -156,12 +156,23 @@ else:
     print('String is not palindrome') 
     
     
+#Q87. Write a Python program to remove i'th element from a string.
+## Taking string input from user
+myStr =  input('Enter the string : ')
+c = int(input('Enter the index of character to be removed : '))
+
+# removing character at the specified index
+resStr = myStr[:c] +  myStr[(c+1):]
+
+# Printing all strings... 
+print ("Entered string : " + myStr)
+print ("String formed by removing c'th character : " + resStr)
+
 #Q91. Write a Python program to merge two dictionary.
 def Merge(dict1, dict2):
     res = {**dict1, **dict2}
     return res
-     
-# Run code
+     # Run code
 dict1 = {'a': 1, 'b': 8}
 dict2 = {'d': 3, 'c': 4}
 dict3 = Merge(dict1, dict2)
