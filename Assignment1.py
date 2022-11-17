@@ -156,6 +156,17 @@ else:
     print('String is not palindrome') 
     
     
+#Q91. Write a Python program to merge two dictionary.
+def Merge(dict1, dict2):
+    res = {**dict1, **dict2}
+    return res
+     
+# Run code
+dict1 = {'a': 1, 'b': 8}
+dict2 = {'d': 3, 'c': 4}
+dict3 = Merge(dict1, dict2)
+print(dict3)
+
 #Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 #Input: list = [9, 5, 6]
 #Output: [(9, 729), (5, 125), (6, 216)]
