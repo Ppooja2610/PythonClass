@@ -204,7 +204,15 @@ dict1 = {'a': 1, 'b': 8}
 dict2 = {'d': 3, 'c': 4}
 dict3 = Merge(dict1, dict2)
 print(dict3)
-
+------------------------------------------------------------------
+#Q92. Python code to convert into dictionary 
+def listtodict(A, di): 
+   di = dict(A) 
+   return di  
+A = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)] 
+di = {} 
+print ("The Dictionary Is ::>",listtodict(A, di)) 
+-----------------------------------------------------------------
 #Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 #Input: list = [9, 5, 6]
 #Output: [(9, 729), (5, 125), (6, 216)]
