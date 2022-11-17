@@ -132,6 +132,24 @@ if(num%2==0):
 else:
     print('Odd Number')
     
+# Q80.Python program to check if the number is an Armstrong number or not
+# take input from the user
+num = int(input("Enter a number: "))
+# initialize sum
+sum = 0
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+
+    
     
 #Q82. Write a Python program to interchange the first and last element in a list.
 l7 =[1,2,3,4,5]
