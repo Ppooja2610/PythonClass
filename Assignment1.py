@@ -140,6 +140,7 @@ else:
     print('String is not palindrome') 
     
     
+    
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
