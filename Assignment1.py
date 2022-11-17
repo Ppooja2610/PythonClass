@@ -156,7 +156,18 @@ else:
     print('String is not palindrome') 
     
     
-    
+#Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
+#Input: list = [9, 5, 6]
+#Output: [(9, 729), (5, 125), (6, 216)]
+num=0
+result = 0
+def cube_tuple(list1):
+    for num in list1:
+        result = (num * num * num)
+        return (num,result)
+cube_tuple([9, 5, 6])
+print(cube_tuple)
+
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
