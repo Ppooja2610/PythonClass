@@ -132,7 +132,12 @@ if(num%2==0):
 else:
     print('Odd Number')
     
-    
+#Q86. Write a Python program to check if a string is palindrome or not.
+str1=str(input('Enter the string:'))
+if (str1 == str1[::-1]):
+    print('String is palindrome')
+else:
+    print('String is not palindrome') 
     
     
 #Question 96 pattern
