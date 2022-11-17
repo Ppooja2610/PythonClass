@@ -139,6 +139,14 @@ temp=l7[0]
 l7[0]=l7[-1]
 l7[-1]=temp
 print(l7)
+
+
+#Q83. Write a Python program to swap two elements in a list.
+l7 =[1,2,3,4,5]
+temp=l7[1] 
+l7[1]=l7[2] 
+l7[2]=temp
+print(l7)
     
 #Q86. Write a Python program to check if a string is palindrome or not.
 str1=str(input('Enter the string:'))
