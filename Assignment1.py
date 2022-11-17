@@ -132,6 +132,14 @@ if(num%2==0):
 else:
     print('Odd Number')
     
+    
+#Q82. Write a Python program to interchange the first and last element in a list.
+l7 =[1,2,3,4,5]
+temp=l7[0]
+l7[0]=l7[-1]
+l7[-1]=temp
+print(l7)
+    
 #Q86. Write a Python program to check if a string is palindrome or not.
 str1=str(input('Enter the string:'))
 if (str1 == str1[::-1]):
