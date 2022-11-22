@@ -137,6 +137,23 @@ if str2 in str1:
         print('Given substring is present')
 else:
         print('Given substring is not present')
+#Q90. Write a Python program to extract unquire dictionary values.
+test_dict = {'t' : [5, 6, 7, 8],
+            'i' : [10, 11, 7, 5],
+            'b' : [6, 12, 10, 8],
+            'f' : [1, 2, 5]}
+ 
+# printing original dictionary
+print("The original dictionary is : " + str(test_dict))
+ 
+
+x=[]
+for i in test_dict.keys():
+    x.extend(test_dict[i])
+x=list(set(x))
+x.sort()
+
+print("The unique values list is : " + str(x))
 
 #Q91. Write a Python program to merge two dictionary.
 def Merge(dict1, dict2):
