@@ -69,6 +69,35 @@ temp=l7[1]
 l7[1]=l7[2] 
 l7[2]=temp
 print(l7)
+
+#Q84.Write a Python program to find N largest element from a list.
+
+#function
+def N_max_elements(list, N):
+    result_list = []
+  
+    for i in range(0, N): 
+        maximum = 0
+          
+        for j in range(len(list)):     
+            if list[j] > maximum:
+                maximum = list[j]
+                  
+        list.remove(maximum)
+        result_list.append(maximum)
+          
+    return result_list
+  
+#test
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 2
+
+print(N, "max elements in ",list1)
+  
+# Calling and printing the function
+print(N_max_elements(list1, N))
+        
+
     
 #Q86. Write a Python program to check if a string is palindrome or not.
 str1=str(input('Enter the string:'))
