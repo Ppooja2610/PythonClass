@@ -181,6 +181,24 @@ res = [(a,b) for a in test_tuple1 for b in test_tuple2]
 res= res + [(a,b) for a in test_tuple2 for b in test_tuple1]
 print('Result is : ',str(res))
 
+#Q95. Write a Python program to sort a list of tuples by second item.
+
+Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
+
+def Sort_Tuple(tup):
+ 
+    # reverse = None (Sorts in Ascending order)
+    # key is set to sort using second element of
+    # sublist lambda has been used
+    tup.sort(key = lambda x: x[1])
+    return tup
+ 
+# Driver Code
+tup = [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
+ 
+# printing the sorted list of tuples
+print(Sort_Tuple(tup))
+
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
