@@ -97,7 +97,17 @@ print(N, "max elements in ",list1)
 # Calling and printing the function
 print(N_max_elements(list1, N))
         
+#Q85.Write a Python program to find cumulative sum of a list.
 
+
+list=[10,20,30,40,50]
+new_list=[]
+j=0
+for i in range(0,len(list)):
+    j+=list[i]
+    new_list.append(j)
+     
+print(new_list)
     
 #Q86. Write a Python program to check if a string is palindrome or not.
 str1=str(input('Enter the string:'))
