@@ -52,9 +52,29 @@ if num == sum:
 else:
    print(num,"is not an Armstrong number")
 
+-----------------------------------------------------------------------------
+#Q81. Write a Python program to find the n-th Fibonacci Number.
+# Function for nth Fibonacci number
 
-    
-    
+def Fibonacci(n):
+	if n<= 0:
+		print("Incorrect input")
+	# First Fibonacci number is 0
+	elif n == 1:
+		return 0
+	# Second Fibonacci number is 1
+	elif n == 2:
+		return 1
+	else:
+		return Fibonacci(n-1)+Fibonacci(n-2)
+
+# Driver Program
+
+print(Fibonacci(10))
+
+
+
+------------------------------------------------------------------------------------  
 #Q82. Write a Python program to interchange the first and last element in a list.
 l7 =[1,2,3,4,5]
 temp=l7[0]
