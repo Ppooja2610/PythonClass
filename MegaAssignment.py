@@ -168,6 +168,19 @@ def cube_tuple(list1):
 cube_tuple([9, 5, 6])
 print(cube_tuple)
 
+#Q94. Write a Python program to get all combinations of 2 tuples.
+#Input : 
+
+test_tuple1 = (7, 2)
+test_tuple2 = (7, 8)
+
+print("Test Tuple 1 is : ",test_tuple1)
+print("Test Tuple 2 is : ",test_tuple2)
+
+res = [(a,b) for a in test_tuple1 for b in test_tuple2]
+res= res + [(a,b) for a in test_tuple2 for b in test_tuple1]
+print('Result is : ',str(res))
+
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
