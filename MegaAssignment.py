@@ -137,6 +137,37 @@ if str2 in str1:
         print('Given substring is present')
 else:
         print('Given substring is not present')
+--------------------------------------------------------------------------------------      
+Q89. Write a Python program to find words which are greater than given length k.
+def string_k(k, str):
+     
+    # create the empty string
+    string = []
+     
+    # split the string where space is comes
+    text = str.split(" ")
+     
+    # iterate the loop till every substring
+    for x in text:
+         
+        # if length of current sub string
+        # is greater than k then
+        if len(x) > k:
+             
+            # append this sub string in
+            # string list
+            string.append(x)
+             
+     # return string list
+    return string
+ 
+ 
+# Driver Program    
+k = 3
+str ="This is sample string"
+print(string_k(k, str))
+
+-----------------------------------------------------------------------------
 #Q90. Write a Python program to extract unquire dictionary values.
 test_dict = {'t' : [5, 6, 7, 8],
             'i' : [10, 11, 7, 5],
@@ -184,7 +215,7 @@ def cube_tuple(list1):
         return (num,result)
 cube_tuple([9, 5, 6])
 print(cube_tuple)
-
+---------------------------------------------------------------
 #Q94. Write a Python program to get all combinations of 2 tuples.
 #Input : 
 
@@ -197,7 +228,7 @@ print("Test Tuple 2 is : ",test_tuple2)
 res = [(a,b) for a in test_tuple1 for b in test_tuple2]
 res= res + [(a,b) for a in test_tuple2 for b in test_tuple1]
 print('Result is : ',str(res))
-
+----------------------------------------------------------------------------------
 #Q95. Write a Python program to sort a list of tuples by second item.
 
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
@@ -215,7 +246,7 @@ tup = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
  
 # printing the sorted list of tuples
 print(Sort_Tuple(tup))
-
+-----------------------------------------------------------
 #Question 96 pattern
 
 n = int(input("Enter the number of rows"))  
@@ -228,7 +259,7 @@ for i in range(0, n):
   
         # ending line after each row  
         print() 
-        
+ ------------------------------------------------------       
   Q97
 rows = int(input("Enter the number of rows:"))  
 k = 2 * rows - 2  # It is used for number of spaces  
